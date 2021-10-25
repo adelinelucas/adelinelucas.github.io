@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+        <title>Html & Css</title>
+</head>
+    <body>
+        <header id="pagesHeader">
+            <section>
+                <a href="../index.html"><img src="../medias/logov4.png" alt="logo" class="logoHeader"></a>
+                <h1>Adeline LUCAS</h1>
+                    <i class="intro">Web dev</i>
+            </section>
+
+            <!--Menu RESPONSIVE-->
+            <section class="menuResponsiv">
+                <div id="menu_burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="menuDeroulant">
+                    <ul>
+                        <li><a href="../index.html">Mon parcours</a></li>
+                        <li><a href="../medias/cv.pdf" target="_blank">Mon CV</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/adeline-lucas-58b179114/">Mon LinkedIn</a>
+                        </li>
+                        <li><a target="_blank" href="https://github.com/adelinelucas?tab=repositories">Mon GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        <!--Menu RESPONSIVE END-->
+        
+            <section class="menuPages">
+                <nav class="menubarre">
+                    <a href="../index.html">Mon parcours</a>
+                </nav>
+                <nav class="reseau_sociaux">
+                    <a target="_blank" href="https://github.com/adelinelucas?tab=repositories"><img src= "../medias/logoGit.png" class="logo"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/adeline-lucas-58b179114/"><img src= "../medias/logo_linkedin.png" class="logo"></a>
+                    <a href="../medias/cv.pdf" target="_blank">Mon CV</a>
+                </nav>
+            </section>    
+        </header>
+
+        <main >
+
+            <nav class="menuProjets">
+                <a href="#">HTML & CSS</a>
+                <a href="pageJs.html">Javascript</a>
+                <a href="pageWordpress.html">WordPress</a>
+                <a href="pagePhp.html">PHP</a>
+                <a href="pageSymfony.html">Symfony</a>
+            </nav>
+            
+        <section id="pagesMain">
+
+            <!-- 1er Article -->
+            <div class="cardPages">
+                <img class="img-card" src="../medias/maquette_missionhtlm.png" alt="maquette projet 1 HTML & CSS" />
+                <div class="card-content">
+                    <h4 class="card-title">HTML & CSS </h4>
+                    <p>Pages complètes, gestion des positionnement avec flex-box, gestion du responsive, utilisation du framework Boostrap.
+                    </p>
+                </div>
+                <div class="card-read-more">
+                    <div class="competenceContainer">
+                        <h2 class="competenceTitle">Compétences mises en oeuvre:</h2>
+                        <div class="badges">
+                            <div class="badgeContainer">
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>HTML</p>
+                            </div>
+                            <div class="badgeContainer"> 
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>CSS</p>
+                            </div>
+                            <div class="badgeContainer">
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>Flex Box</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2eme Article -->
+            <div class="cardPages">
+                <img src="../medias/projet1v2.png" alt="maquette projet 2 HTML & CSS" class="img-illustration" id="illustration" onclick="onClick(this)">                
+                <div class="card-content">
+                    <h4 class="card-title">HTML & CSS </h4>
+                    <p>Intégration des médias (vidéos/audio/cartes). Perfectionnement du positionnement des images en CSS avec la propriété background.
+                    </p>
+                </div>
+                <div class="card-read-more">
+                    <div class="competenceContainer">
+                        <h2 class="competenceTitle">Compétences mises en oeuvre:</h2>
+                        <div class="badges">
+                            <div class="badgeContainer">
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>HTML</p>
+                            </div>
+                            <div class="badgeContainer"> 
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>CSS</p>
+                            </div>
+                            <div class="badgeContainer">
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>Flex Box</p>
+                            </div>
+                            <div class="badgeContainer">
+                                <img src="../medias/check.png" alt="badge de certification" class="badge">
+                                <p>Responsive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="scrollToTopBtn">
+            <img src="../medias/scrollToTop.png"></img>    
+        </div>
+
+    <script src="../js/app.js"></script>
+    </body>
+</html>
