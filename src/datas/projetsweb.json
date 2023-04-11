@@ -1,0 +1,131 @@
+{
+    "projetsWeb": [
+        {
+            "titre": "Ajout de fonctionnalités sur le projet GogoCarto - stage Kids and Family",
+            "description":"Le contexte du stage était de travailler sur le projet Open Source GogoCarto et d'y ajouter des fonctionnalités additionnelles. \n Le projet GogoCarto (https://gitlab.com/Seballot/gogocarto) est un projet open source crée par Sébatien Ballot en Symfony, utilisant Sonata Bundle et MongoDB pour l'administration de la base de données. \n Au cours des 2 mois de stage, j'ai pu appréhender à MongoDB et à l'utilisation de Sonata Bundle. \nFonctionnalités travaillées: \n -ajout d'un bouton scroll sur les pages, \n - mise en place d'une page \"Ressources\" permettant aux visiteurs de visualiser les ressources présentes sur le site. Les éléments sont présentés sous forme de cartes cliquables, \n - Lorsque le visiteur clique sur une carte, il accède au détail de la ressource. Si la ressource comporte un lien, un bouton renvoyant vers le lien apparaît sur la ressource, \n - Ajout de bouton \"social share\" pour pouvoir partager la publication sur Facebook, Twitter, Mail et copier l'URL de la page, \n - Coté Administrateur, ajout dans le menu d'une page \"Ressources\" pour permettre à l'administrateur via un form de créer une ressource.",
+            "technosTag": ["CSS", "PHP", "Symfony", "MongoDB"],
+            "url": "",
+            "cover":"./ressources/",
+            "typeProjet": "Stage",
+            "visibility": "false"
+        },
+        {
+            "titre": "Projet de final de formation - Site de sorties",
+            "description":"Pour ce projet final de formation, nous avions 10 jours pour développer un projet complet avec le framwork Symfony en groupe (avec CRUD). \n La construction du site du choix du thème à la direction graphique étant libre, nous avons brainstormé en équipe pour trouver un thème, une charte graphique cohérente et des fonctionnalités à proposer. \n Nous avons créé un site de sorties visant uniquement un public féminin, en hommage à notre promotion Women In Digital. Le site proposant des visites (payantes ou gratuites) pour découvrir les pépites touristiques, culinaires, culturelles d'Ile de France. \n Fonctionnalités du site :\n - Une page d'accueil comprenant un lien de connexion pour identifier les personnes inscrites sur le site,une barre de recherche d'activité en fonction du thème de la sortie, un bloc d'image cliquable renvoyant vers les sorties correspondantes, un modal indiquant aux utilisateurs du site que le site est réservé aux femmes, \n - Une page d'inscription au site, \n -Une page d'affichage des sorties comprenant un bouton action afin d'accéder à l'ensemble des fiches \"visites\" / ou d'accéder à l'ensemble des fiches \"sorties\" , un carrousel des 3 dernières visites, un carrousel des 3 dernières sorties gratuites.",
+            "technosTag": ["HTML", "CSS", "PHP", "Symfony", "SQL"],
+            "url": "",
+            "cover":"./images/projetPetiteCouronne.png",
+            "typeProjet": "formation",
+            "visibility": "false"
+        },
+        {
+            "titre": "Pink Inspiration - projet solo",
+            "description":"Ce projet a permis de travailler avec Brizy, dont l'utilisation est très intuitive et simplifiée avec les blocs fournis.",
+            "technosTag": ["WordPress", "Brizy"],
+            "url": "http://pinkinspiration.000webhostapp.com/",
+            "cover":"./images/maquettePinkInspiration.png",
+            "typeProjet": "formation",
+            "visibility": "true"
+        },
+        {
+            "titre": "Revue du site \"Stop-Ancre\" - BootCamp Into Tech -",
+            "description":"Le projet est le projet le plus passionnant sur lequel j'ai pu travailler. Il s'agissait de faire une proposition de refonte du site d'un auto-entrepeneur. Le projet a permis de travailler en groupe sur les éléments de fond et de forme du site (revue du logo, revue de l'architecture du site, ajout d'une partie e-commerce ). Site intial : https://www.eco-nautisme.com/.",
+            "technosTag": ["WordPress", "Brizy"],
+            "url": "http://git134.dreamhosters.com/",
+            "cover":"./images/wordpress_stopAncre1.png",
+            "typeProjet": "formation",
+            "visibility": "true"
+        },
+        {
+            "titre": "Création d'une boutique e-commerce en ligne",
+            "description":"Une page d'accueil avec l'ensemble des produits chargés dynamiquement depuis la base de données. En cas de rupture de stock de produits, en Javascript nous désactivons le bouton \"ajout au panier\". Une page produit permettant d'ajouter le produit dans le panier. La possibilité de supprimer un produit depuis le panier. Vérification de la disponibilité des produits depuis le stock en BDD",
+            "technosTag": ["HTML","CSS","Javascript","PHP","Symfony"],
+            "frontBack": "front",
+            "url": "",
+            "cover":"",
+            "typeProjet": "formation",
+            "visibility": "false"
+        }
+        ,
+        {
+            "titre": "Bouton pour générer un numéro de dossier client automatique",
+            "description":"1er projet d'alternance, créer un bouton appelant le back pour générer dynamiquement un numéro de dossier. Le numéro de dossier devait être le numéro suivant le dernier numéro de la base de données, j'ai utilisé la requête 'MAX' de SQL.",
+            "technosTag": ["SQL","PHP"],
+            "frontBack": "back",
+            "url": "",
+            "cover":"",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Intégration de landing page",
+            "description":"Intégration d'une page de fin de funnel avec le framework Tailwind CSS. Page responsive.",
+            "technosTag": ["HTML","CSS","Tailwind CSS"],
+            "frontBack": "front",
+            "url": "",
+            "cover":"",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Ajout d'un bouton de relance clients",
+            "description":"Ajout conditionnel d'un bouton pour permettre aux équipes concernées de renvoyer simplement un contrat par mail au client.",
+            "technosTag": ["HTML","CSS","PHP", "CodeIgniter"],
+            "frontBack": "back",
+            "url": "",
+            "cover":"",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Helper Form",
+            "description":"Création d'un helper pour la génération d'un formulaire sur plusieurs landings, le helper ayant pour but de permettre à l'intégrateur de personnaliser plus facilement le formulaire nécessaire sur la landing page tout en n'intervenant pas coté back.",
+            "technosTag": ["HTML","CSS","Javascript","PHP"],
+            "frontBack": "front",
+            "url": "https://github.com/adelinelucas/helper_form",
+            "cover":"",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Backoffice pour la gestion de dossier clients",
+            "description":"Réalisation from scratch d'un bakoffice interne à l'entreprise pour permettre le suivi de dossiers client en fonction de leur status. \nFonctionalités: \n -Récupération des datas et mise en forme dans une table avec DataTable, \n-Système d'authentification du user,\n-Accès différencié aux données des clients en fonction du user.\n Projet réalisé en utilisant la POO.",
+            "technosTag": ["HTML","CSS","Javascript","PHP"],
+            "frontBack": "front et back",
+            "url": "",
+            "cover":"./images/outil_suivi_clients.jpg",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Backoffice pour la génération de landing page",
+            "description":"Création from scratch d'un outil backoffice pour automatiser la génération de landing page (CRUD). Selon les paramètres renseignés certains éléments sont pré-rempli (url de la landing). Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone.",
+            "technosTag": ["HTML","CSS","Javascript","PHP"],
+            "frontBack": "front",
+            "url": "",
+            "cover":"./images/outil_generateur_lp.jpg",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Backoffice pour la génération de offre",
+            "description":"Création from scratch d'un outil backoffice pour la création/ mise à jour d'offres promotionnelles. Toutes les interactions sur la page ont été réalisées en JS, principalement en asynchrone. J'ai beaucoup aimé ce projet qui était dans le prolongement du générateur de landing et qui m'a permis de réaliser un projet complet front et back.",
+            "technosTag": ["HTML","CSS","Javascript","PHP", "CodeIgniter"],
+            "frontBack": "front et back",
+            "url": "",
+            "cover":"./images/outil_gestion_offres.jpg",
+            "typeProjet": "alternance",
+            "visibility": "true"
+        },
+        {
+            "titre": "Projet de fin de formation - Trashbuster",
+            "description":"Les consignes de l'école: créer un site web front et back comprenant un crud complet en en 2 semaines. Le site Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public. Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action,(les kilos indiqués dans le commentaire) vont permettre de compléter l'objectif total de déchets collectés sur ce point de collecte.",
+            "technosTag": ["HTML","Tailwind_CSS","React", "Javascript", "Express", "MongoDB"],
+            "frontBack": "front",
+            "url": "https://github.com/adelinelucas/Trashbuster_finalProject",
+            "cover":"./images/trashbuster.jpg",
+            "typeProjet": "formation",
+            "visibility": "true"
+        }
+    ]
+}
