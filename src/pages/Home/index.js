@@ -17,7 +17,7 @@ const Home = () => {
     useEffect(()=>{
         const interval = setInterval(()=>{
             let timer ;
-            const baselineComplete= ' Adeline, dévelopeuse junior';
+            const baselineComplete= '|Adeline, dévelopeuse junior';
 
             if(baselineIndex < baselineComplete.length){
                 setBaseline(oldArray => [...oldArray,baselineComplete[baselineIndex]])
