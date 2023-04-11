@@ -122,7 +122,7 @@
             "description":"Objectif: créer un site web front et back comprenant un crud complet en 2 semaines. Trashbuster est une plateforme pour les particuliers/associations/écoles pour collecter les déchets polluants l'espace public. Un utilisateur peut :\n -créer un comptre, \n -créer une action de collecte, \n -commenter une autre action, \n -metter à jour/supprimer une action qu'il a créé. \n Les commentaires d'une action (les kilos indiqués dans le commentaire) vont permettre de compléter l'objectif total de déchets collectés sur ce point de collecte.",
             "technosTag": ["HTML","Tailwind_CSS","React", "Javascript", "Express", "MongoDB"],
             "frontBack": "front",
-            "url": "https://github.com/adelinelucas/Trashbuster_finalProject",
+            "url": "https://trashbuster-finalproject.netlify.app",
             "cover":"./images/trashbuster.jpg",
             "typeProjet": "formation",
             "visibility": "true"
