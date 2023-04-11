@@ -1,0 +1,33 @@
+@import '../../App.css';
+#root{
+    background-color: var(--BG-SECTION);
+    height: fit-content;
+}
+.page{
+    background-color: var(--BG-SECTION);
+    width: 100%;
+    min-height: 80vh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.page__html-tags{
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--ORANGE-POP);
+    margin:0.5rem 5rem;
+    padding: 2rem 0;
+}
+
+.page__html-tags.top-body-tag{
+    padding-bottom: 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+    .page__html-tags {
+        margin: 0.5rem 1rem;
+        padding: 1rem 0;
+    }
+}

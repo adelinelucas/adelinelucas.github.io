@@ -1,0 +1,25 @@
+.footer-section{
+    background-color: var(--BG-FOOTER);
+    width: 100%;
+    min-height: 5vh;
+    color: var(--WHITE);
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    z-index: 100;
+}
+
+.footer-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-section ul li a svg {
+    color: var(--WHITE);
+    margin: 0.5rem; 
+    font-size:  var(--FONT-MEDIUM);
+}
+

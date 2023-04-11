@@ -1,0 +1,74 @@
+/* RESET */
+*, 
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea {
+  font: inherit;
+
+}
+
+/* VARIABLES */
+:root{
+  /* Color */
+  --BG-SECTION: #f5f1ef9e;
+  --BG-FOOTER: #151715;
+  --FONT-COLOR: #151715;
+  --RED-ORANGE: #BF452A;
+  --YELLOW: #F2B33D;
+  --LIGHT-ORANGE: #F29544;
+  --ORANGE: #F28444;
+  --ORANGERED: #F26444;
+  --BRIGHT-RED : #F25041;
+  --WHITE: #fff;
+  --PURPLE:#5A378C;
+  --DARK-PURPLE:#190F26;
+
+  /* /// */
+  --BG-PAGES:#F2F0F2;
+  /* --LIGHT-PURPLE: #B78DF2; */
+  --LIGHT-PURPLE: #9959f7;
+  --VIOLINE:#8878B2;
+  --BLUE-PURPLE:#6F71E8;
+  --LIGHT-BLUE:#504EE8;
+  --MAT-BLUE:#77ABD9;
+
+  /* /// */
+  --PINK-POP: #D95B96;
+  --PURPLE-POP: #800077;
+  --ORANGE-POP:#FF8300;
+  --YELLOW-POP:#F2CB05;
+  --KAKI:#967C11;
+  --GREEN:#BB9E04;
+  --DEEP-GREEN:#337F45;
+
+  /* FONT SIZE */
+  --FONT-XL:2.5rem;
+  --FONT-BIG:2rem;
+  --FONT-MEDIUM: 1.5rem;
+  --FONT-SMALL: 1.2rem;
+  --FONT-XS: 1.1rem;
+  --FONT-XXS: 0.9rem;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

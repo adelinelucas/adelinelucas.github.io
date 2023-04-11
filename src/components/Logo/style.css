@@ -1,0 +1,86 @@
+.header__baseline{
+    position: absolute;
+    display: flex;
+    top: 18px;
+    left: 45px;
+    font-size: 3rem;
+    /* color: var(--PURPLE); */
+    -webkit-text-stroke: 4px var(--WHITE);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+}
+
+.header__baseline-animated:hover{
+    color: var(--DEEP-GREEN);
+    -webkit-text-fill-color: var(--WHITE);
+    animation: animateLetters 2s ease 0s 1 normal forwards;
+    text-decoration: underline;
+    animation-fill-mode: both;
+
+}
+
+.logo-tab{
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: var(--WHITE);
+	border-radius: 50%;
+	position: relative;
+	top:50px;
+	animation: blinkAnimation 2s ease 0s infinite forwards;
+}
+@keyframes animateLetters {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-20px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+.tab-animated {
+    display:inline-block;
+    margin-left: 10px;
+    height: 15px;
+    animation: blinkAnimation 2s ease 0s infinite forwards;
+}
+
+@keyframes blinkAnimation {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+@keyframes lettresgrossisantes {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
+}
