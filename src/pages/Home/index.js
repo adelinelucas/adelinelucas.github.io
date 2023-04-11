@@ -16,26 +16,23 @@ const Home = () => {
 
     useEffect(()=>{
         const interval = setInterval(()=>{
-            let timer ;
-            const baselineComplete= '|Adeline, dévelopeuse junior';
+            const baselineComplete= 'Adeline, développeuse junior'.split('');
 
-            if(baselineIndex < baselineComplete.length){
+            if(baselineIndex <= baselineComplete.length){
                 setBaseline(oldArray => [...oldArray,baselineComplete[baselineIndex]])
-                setBaselineIndex(baselineIndex++);
+                setBaselineIndex(baselineIndex + 1);
                 if(baselineIndex === baselineComplete.length){
                     injectTab()
                 }
             }else{
-                clearTimeout(timer);
+                clearInterval(interval);
             }
         },speed)
 
         return ()=>{
             clearInterval(interval)
-            setBaselineIndex(0);
-            setBaseline([])
         }
-    }, [])
+    }, [baselineIndex])
     return (
         <section className='home'>
             <h1 id="baseline">{baseline}<span id="baseline-tab"></span></h1>
