@@ -24,7 +24,6 @@ const Logo = () => {
                 setTextLogo([])
                 if(textLogo.join('').includes('Adeline')){
                     // return baselineComplete = intro[1]
-                    console.log(textToDisplay)
                     setBaselineIndex(0);
                     setTextToDisplay(intro[1])
                     setTextLogo([])

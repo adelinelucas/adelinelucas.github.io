@@ -6,9 +6,9 @@
     width: 100%;
     /* min-height: 7rem; */
     height: 13vh;
-    border-bottom: 4px double var(--DARK-PURPLE);
+    border-bottom: 6px solid var(--ORANGE-POP);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     background-color:var(--YELLOW-POP) ;
 }

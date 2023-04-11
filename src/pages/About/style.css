@@ -110,7 +110,7 @@
 .about__section article p {
     text-indent: 30px;
     width: 100%;
-    margin: 0.3rem auto;
+    margin: auto;
 }
 .about__section article ul {
     list-style: none;
@@ -147,7 +147,7 @@
     margin:auto;
 }
 .about__section article .about__section__aside-content p{
-    font-size: var(--FONT-SMALL);
+    font-size: var(--FONT-XXS);
 }
 
 .about__section__aside-content p {

@@ -5,7 +5,6 @@ import './style.css';
 import {MapContainer, TileLayer} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 const Contact = () => {
-    console.log(process.env.REACT_APP_API_KEY)
     const center=['48.912259', '2.384049'];
     const url = `https://maps.geoapify.com/v1/tile/osm-carto/{z}/{x}/{y}.png?apiKey=${process.env.REACT_APP_API_KEY}`
     
@@ -13,7 +12,6 @@ const Contact = () => {
     useEffect(()=>{          
         const timer = setTimeout(() => {
             setRenderLoader(false) ;
-                    console.log(renderLoader)
             }, 1000);
         
         return () => clearTimeout(timer);

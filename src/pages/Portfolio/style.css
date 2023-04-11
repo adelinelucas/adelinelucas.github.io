@@ -29,10 +29,10 @@
 }
 
 .portfolio header div h2{
-    font-size: var(--FONT-XL) ;
+    font-size: var(--FONT-BIG) ;
     color: var(--ORANGE-POP);
     letter-spacing: 10px;
-    font-weight: 600;
+    font-weight: bold;
     margin: 0.5rem auto 1.5rem;
     padding: 0.5rem;
     text-shadow: 1px 0px 0px var(--ORANGE-POP);
