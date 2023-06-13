@@ -1,0 +1,13 @@
+@tailwind base; 
+@tailwind components; 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@tailwind utilities;
+* {
+    box-sizing: border-box;
+}
+:root{
+    --SHADOW-COLOR: #595959;
+}
+.text-shadow{
+    text-shadow: 1px 1px 2px var(--SHADOW-COLOR); 
+}
