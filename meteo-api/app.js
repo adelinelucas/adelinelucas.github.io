@@ -52,7 +52,7 @@ const getCoordinate = async(city) =>{
 const appendHTMLContent = (city,temperatureInfo,meteoInfo,humidityInfo, weatherIcon ) =>{
     let htmlContent = `
     <div class="card flex flex-row p-4">
-        <img src="../assets/presentatrice.png" class="pr-2" alt="présentation des résultats de recherche" width="100px" height="190px">
+        <img src="../assets/dinometeo.png" class="pr-2" alt="présentation des résultats de recherche" width="200px" >
         <div class="card-body">
             <h5 class="card-title">${city}</h5>
             <p class="card-text d-flex align-items-center" id="temperature-info"><span>Température : </span><i class="bi bi-thermometer-half"></i> ${temperatureInfo}</p>
