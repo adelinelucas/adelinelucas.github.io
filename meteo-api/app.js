@@ -44,7 +44,7 @@ const getWeatherInfo = async(cityValue) =>{
 
 const getCoordinate = async(city) =>{
     const APIKEY = '9d14fab5293af26cf8dc10b7ff26e891';
-    let data = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},FR&limit=1&appid=${APIKEY}`)
+    let data = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},FR&limit=1&appid=${APIKEY}`)
     const jsonData = await data.json();
     return jsonData;
 }
@@ -56,7 +56,7 @@ const appendHTMLContent = (city,temperatureInfo,meteoInfo,humidityInfo, weatherI
         <div class="card-body">
             <h5 class="card-title">${city}</h5>
             <p class="card-text d-flex align-items-center" id="temperature-info"><span>Température : </span><i class="bi bi-thermometer-half"></i> ${temperatureInfo}</p>
-            <p class="card-text d-flex align-items-center" id="meteo-info"><span>Météo : </span><img id="wicon" src="http://openweathermap.org/img/w/${weatherIcon}.png" alt="Weather icon"> ${meteoInfo} </p>
+            <p class="card-text d-flex align-items-center" id="meteo-info"><span>Météo : </span><img id="wicon" src="https://openweathermap.org/img/w/${weatherIcon}.png" alt="Weather icon"> ${meteoInfo} </p>
             <p class="card-text d-flex align-items-center" id="humidity-info"><span>Humidité : <i class="bi bi-moisture"></i></span>${humidityInfo}</p>
         </div>
     </div>
