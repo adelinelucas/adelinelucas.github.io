@@ -8,9 +8,7 @@ let city ;
 let weatherIcon;
 
 weatherBtn.addEventListener('click', ()=>{
-    console.log('click')
     let searchedCity = weatherInput.value; 
-    console.log(searchedCity);
     getWeatherInfo(searchedCity);
 })
 

@@ -9,28 +9,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="app.js" defer></script>
     
 </head>
 <body>
-    <header class="container-fluid w-100 py-4 d-flex col-8 justify-content-center align-items-center">
-        <img src="../assets/sun.png" alt="illustration d'un soleil" width="100px"/>
-        <h1 class="">La météo près de chez vous !</h1>
-        <img src="../assets/sun.png" alt="illustration d'un soleil" width="100px"/>
-    </header>
-    <main>
-        <section id="search" class="container-fluid d-flex flex-column flex-wrap col-8 justify-content-center my-5">
-            <label class="w-100 d-flex justify-content-center py-4 fs-4">
-                Quelle météo fait il à : 
-            </label>
-            <div class="d-flex justify-content-center flex-wrap">
-                <input class="form-control me-2 " type="search" placeholder="Taper le nom de la ville" aria-label="Search" id="weather-search">
-                <button class="btn btn-warning col-lg-2 col-md-4 col-sm-8" id="weather-search-btn">Chercher</button>
-            </div>
-            
-        </section>
-        <section id="result" class="container-fluid d-flex col-lg-6 col-md-8 justify-content-center my-5 align-items-center">
-        </section>
+    <header class="w-full bg-pop-yellow h-42 flex flex-row py-4 mb-2">
+        <article class="flex items-end">
+            <img src="../assets/favion.png" alt="logo du site web" width="100px"/>
+            <p class="text-5xl text-pop-purple font-caveat tracking-widest text-shadow my-2 font-black">Front Sandbox</p>
+        </article>
+        <nav class="flex flex-row items-end py-4 w-full justify-start  h-auto">
+             <ul>
+                 <li>
+                     <a href="../cocktail-api/cocktail-api.html" class="border-4 rounded-sm bg-pop-blue text-white py-2 px-6 border-blue-50 tracking-widest">Cocktail Api</a>
+                 </li>
+             </ul>
+         </nav>
+     </header>
+    <main class="w-10/12 flex flex-col justify-center m-auto">
+        <header class="container-fluid w-100 py-4 d-flex col-8 justify-content-center align-items-center">
+            <img src="../assets/sun.png" alt="illustration d'un soleil" width="100px"/>
+            <h1 class="">La météo près de chez vous !</h1>
+            <img src="../assets/sun.png" alt="illustration d'un soleil" width="100px"/>
+        </header>
+        <div>
+            <section id="search" class="container-fluid d-flex flex-column flex-wrap col-8 justify-content-center my-5">
+                <label class="w-100 d-flex justify-content-center py-4 fs-4">
+                    Quelle météo fait il à : 
+                </label>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <input class="form-control me-2 " type="search" placeholder="Taper le nom de la ville" aria-label="Search" id="weather-search">
+                    <button class="btn btn-warning col-lg-2 col-md-4 col-sm-8" id="weather-search-btn">Chercher</button>
+                </div>
+                
+            </section>
+            <section id="result" class="container-fluid d-flex col-lg-6 col-md-8 justify-content-center my-5 align-items-center">
+            </section>
+        </div>
     </main>
+    <footer class="w-full bg-black flex flex-row justify-center fixed bottom-0 left-0 py-4">
+        <img src="../assets/dinosandbox.png" alt="" width="150px"/>
+        <article class="flex flex-row items-center px-10 justify-around"> 
+            <a href="../index.html" class="text-slate-50 underline w-[105px]">Retour à la page d'accueil</a>
+            <a href="https://github.com/adelinelucas?tab=repositories" target="_blank"><img src="../assets/githubicon.png" alt="Lien vers le github de Adeline LUCAS" width="50px"/></a>
+            <a href="https://www.linkedin.com/in/adeline-lucas-web-dev/" target="_blank"><img src="../assets/linkedinicon.png" alt="Lien vers le LinkedIn de Adeline LUCAS" width="50px"/></a>
+        </article>
+
+        <img src="../assets/dinosandbox.png" alt="" width="150px" class="reverse"/>
+
+    </footer>
 </body>
 </html>
