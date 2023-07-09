@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         caveat: ["Caveat", "cursive"],
       },
+      animation: {
+        'boxContainerAnimation': 'all ease-in-out 5s',
+      },
     },
   },
   plugins: [],
