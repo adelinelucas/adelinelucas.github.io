@@ -1,0 +1,82 @@
+{
+    "products" : [
+        {
+            "title":"COSRX",
+            "resume":"Advanced Snail Radiance Dual Essence 80ml",
+            "description":"This revitalizing essence enriched with 74.3% Triple Snail Complex.",
+            "img":"./images/products/advanced-snail-96-mucin-power-essence 1.png",
+            "ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",
+            "price": 22,
+            "oldPrice":15,
+            "isBestSeller":false,
+            "stockQuantity":5,
+            "category":[],
+            "brand":"COSRX"
+        },
+        {
+            "title":"Low pH Good Morning",
+            "resume":"Gel Cleanser 150ml",
+            "description":"Slightly acidic pH level helps maintain healthy skin by restoring the skin's opitmal pH level and protecting the skin from outer irritants.",
+            "img":"./images/products/advanced-snail-96-mucin-power-essence 1.png",
+            "ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",           
+            "price": "abc",
+            "oldPrice":15,
+            "isBestSeller":true,
+            "stockQuantity":5,
+            "category":["cleansers"],
+            "brand":"COSRX"
+        },
+        {
+            "title":562229,
+            "resume":"Essence 150ml",
+            "description":"A essence for men who want efficiently skin care. Midl cream type essence provides excellent moisture and nourish skin. Containing of Triple Ceramid, NMF 5 Effector, Avena Sativa and Kernel oil extract.",
+            "img":"./images/products/advanced-snail-96-mucin-power-essence 1.png",
+            "ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",           
+            "price": 15,
+            "oldPrice":18,
+            "isBestSeller":false,
+            "stockQuantity":12,
+            "category":["men","moisturizes"],
+            "brand":"MISSHA"
+        },
+        {
+            "title":"Cauliflower Mushroom",
+            "resume":"Vital Cream 60ml",
+            "description":"Conveys the ample moisture and powerful anti-oxidant energy of Jeju cauliflower mushroom and Beta-glucan to the skin. The highly moisturizing and nourishing anti-aging care tends the skin texture smooth and moist and the skin tone bright and clear. The rich texture of the moisturizing cream conveys deep moisture and flexibility to the skin",
+            "img":"./images/products/inisfree.pnf",
+            "ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",
+            "price":35,
+            "oldPrice":42,
+            "isBestSeller":true,
+            "stockQuantity":25,
+            "category":["masks"],
+            "brand":5623
+        },
+        {
+            "title":"Advanced Snail Peptide",
+            "resume":"Eye Cream 25ml",
+            "description":"A total-care eye cream that nourishes and brightens the dull and weak eye skin with the elasticity of snail mucus filtrate and 5 peptides. The soft eye cream spreads smoothly on the skin, tending the skin mildly with the convenient and sanitary pump container. The moist and firm texture adheres to the skin, providing moisture and nutrition to the skin without stickiness.",
+            "img":"./images/products/inisfree.pnf",
+            "ingredients": "Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Polysorbate 20, Styrax Japonicus Branch/Fruit/Leaf Extract, Butylene Glycol, Saccharomyces Ferment, Cryptomeria Japonica Leaf Extract, Nelumbo Nucifera Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract, Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Allantoin, Caprylyl Glycol, Ethylhexylglycerin, Betaine Salicylate, Citric Acid, Ethyl Hexanediol, 1,2-Hexanediol, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Disodium EDTA",
+            "price":14,
+            "oldPrice":27,
+            "isBestSeller":false,
+            "stockQuantity":75,
+            "category":[2,4,5],
+            "brand":"COSRX "
+        },
+        {
+            "title":"Vegan Peptide Bakuchiol Sun Stick",
+            "resume":"SPF50+ PA++++ 18g",
+            "description":"A total-care eye cream that nourishes and brightens the dull and weak eye skin with the elasticity of snail mucus filtrate and 5 peptides. The soft eye cream spreads smoothly on the skin, tending the skin mildly with the convenient and sanitary pump container. The moist and firm texture adheres to the skin, providing moisture and nutrition to the skin without stickiness.",
+            "img":"./images/products/inisfree.pnf",
+            "ingredients": "This sun stick is created with a mild formulation but has powerful anti-aging effects on the skin without causing irritation on the skin. This product is a portable stick-type sunscreen that is easy to store and convenient to take around on all your adventures. This sun stick can be easily reapplied anytime, wherever you are without touching the face. This product is made of all natural vegan ingredients to be suitable for all skin types and lifestyles.",
+            "price":12,
+            "oldPrice":30,
+            "isBestSeller":false,
+            "stockQuantity":0,
+            "category":["suncare"],
+            "brand":"Mary&May "
+        }
+    ]   
+}

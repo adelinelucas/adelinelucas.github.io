@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARA - BEAUTY</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./checkout.css">
+</head>
+<body class="container-fluid px-0">
+  <header class="header container-fluid">
+    <div class="header row row-cols-3 pb-3">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Cleansers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Moisturizes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suncare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men's</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">
+                <img src="./images/icons/search-icon-50px.png" alt="serch button to find your perfect product" width="50">
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="header__title d-flex align-items-center">
+        <h1>ARA - Beauty</h1>
+        <img src="./images/logo-transparent-bg.png" alt="ARA, cosmetic brand for all skins.">
+      </div>
+      <div class="header__products__actions row row-cols-2">
+        <a class="icon-link icon-link-hover link--maroon-ara">
+          <img src="./images/icons/favoris-50px.png" alt="Button to visualize all favorits products">
+        </a>
+        <a class="icon-link icon-link-hover">
+          <img src="./images/icons/shopping-bag-50px.png" alt="Button to go to the cart section">
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Checkout</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3 sticky-top">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>WELCOME20</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback"> Valid first name is required. </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback"> Valid last name is required. </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
+            </div>
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <div class="invalid-feedback"> Please enter your shipping address. </div>
+            </div>
+            <div class="mb-3">
+              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                  <option>France</option>
+                </select>
+                <div class="invalid-feedback"> Please select a valid country. </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                  <option>Ile de France</option>
+                </select>
+                <div class="invalid-feedback"> Please provide a valid state. </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip Code</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback"> Zip code required. </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Delivery address same as billing address</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this information for next purchase</label>
+            </div>
+            <div class="delivery-container">
+              <div class="card_product">
+                <img src="images/dhl-100.png" alt="external-dhl-dalsey-hillblom-and-lynn-international-which-is-international-courier-parcel-and-express-mail-company-industry-color-tal-revivo"/>
+                <div class="card-product-infos">
+                  <h2>Dhl delivery</h2>
+                  <p>Delivery time: 3 days</p>
+                </div>
+              </div>
+              <div class="card_product">
+                <img src="images/icons8-fedex-100.png" alt="DHL" />
+                <div class="card-product-infos">
+                  <h2>Fedex delivery</h2>
+                  <p>Delivery time: 4 days</p>
+                </div>
+              </div>
+            </div>
+            <hr class="mb">
+            <h4 class="container-payment mb-2">Payment Options</h4>
+            <div class="d-block my-3">
+              <div class="buttons-payment p-2 mb-3">
+                <button class="button-google" onclick=""></button>
+                <button class="button-apple">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                  </svg>
+                  Pay
+                </button>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback"> Name on card is required </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback"> Credit card number is required </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback"> Expiration date required </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback"> Security code required </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="container-order">
+              <button class="btn-order" type="submit">Place order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer class="footer py-3 px-2 mt-4 bg-dark text-light">
+    <div class="footer__hero d-flex justify-content-center">
+      <img src="./images/logo-transparent-bg-white.png" alt="ARA Beauty - a cosmetic brand.">
+    </div>
+    <div class="footer__categories">
+      <nav>
+        <ul class="nav justify-content-center pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">OUR POLICY<span class="footer__categories__border"></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">ABOUT US<span class="footer__categories__border"></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">COMPANY<span class="footer__categories__border"></span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">NEWSLETTER</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__socials container my-2">
+      <div class="row h-auto">
+        <h5 class="col d-flex w-auto m-0 p-0 align-items-center">Socials</h5>
+        <div class="footer-socials-icons col-9 mb-0 d-flex align-items-center">
+          <!-- Twitter -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
+            <path d="M15.0012 1.42875C14.45 1.67292 13.8571 1.83583 13.2317 1.91292C13.8675 1.53542 14.3567 0.933333 14.5862 0.222083C13.9912 0.570833 13.3321 0.827083 12.6308 0.962083C12.0708 0.368333 11.2721 0 10.3871 0C8.68708 0 7.30917 1.36583 7.30917 3.05C7.30917 3.28833 7.33708 3.52042 7.38958 3.74583C4.83208 3.6175 2.56375 2.40167 1.04625 0.556667C0.779583 1.0075 0.629583 1.53542 0.629583 2.0925C0.629583 3.15125 1.17167 4.08333 1.99833 4.6325C1.49375 4.61708 1.01875 4.47667 0.602916 4.25167C0.602916 4.26083 0.602916 4.27458 0.602916 4.2875C0.602916 5.76708 1.66417 6.99917 3.07083 7.27958C2.81375 7.35 2.54208 7.38917 2.26208 7.38917C2.06333 7.38917 1.86958 7.36667 1.68208 7.33292C2.07375 8.54208 3.21 9.42583 4.55625 9.45208C3.50292 10.2687 2.17625 10.7579 0.73375 10.7579C0.484583 10.7579 0.240833 10.7437 0 10.7146C1.36292 11.5775 2.98125 12.0833 4.71833 12.0833C10.3787 12.0833 13.4754 7.435 13.4754 3.4025C13.4754 3.27042 13.4712 3.13875 13.465 3.00875C14.0692 2.58208 14.59 2.04375 15.0012 1.42875Z" fill="#03A9F4"/>
+          </svg>
+          <!---->
+          <!-- Facebook -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17.5 15.4167C17.5 16.5675 16.5675 17.5 15.4167 17.5H4.58333C3.43292 17.5 2.5 16.5675 2.5 15.4167V4.58333C2.5 3.4325 3.43292 2.5 4.58333 2.5H15.4167C16.5675 2.5 17.5 3.4325 17.5 4.58333V15.4167Z" fill="#3F51B5"/>
+            <path d="M14.32 10.4167H12.9167V15.8334H10.8334V10.4167H9.58337V8.75008H10.8334V7.74591C10.8342 6.28425 11.4413 5.41675 13.1634 5.41675H14.5834V7.08341H13.6305C12.96 7.08341 12.9167 7.33341 12.9167 7.80133V8.75008H14.5834L14.32 10.4167Z" fill="white"/>
+          </svg>
+          <!---->
+          <!-- Instagram -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M14.1738 17.4958L5.84043 17.5038C4.0071 17.5054 2.50585 16.0071 2.50377 14.1738L2.49585 5.84043C2.49418 4.0071 3.99252 2.50585 5.82585 2.50377L14.1592 2.49585C15.9925 2.49418 17.4938 3.99252 17.4958 5.82585L17.5038 14.1592C17.5058 15.9929 16.0071 17.4942 14.1738 17.4958Z" fill="url(#paint0_radial_53_850)"/>
+            <path d="M14.1738 17.4958L5.84043 17.5038C4.0071 17.5054 2.50585 16.0071 2.50377 14.1738L2.49585 5.84043C2.49418 4.0071 3.99252 2.50585 5.82585 2.50377L14.1592 2.49585C15.9925 2.49418 17.4938 3.99252 17.4958 5.82585L17.5038 14.1592C17.5058 15.9929 16.0071 17.4942 14.1738 17.4958Z" fill="url(#paint1_radial_53_850)"/>
+            <path d="M10 12.9166C8.39212 12.9166 7.08337 11.6083 7.08337 9.99992C7.08337 8.39159 8.39212 7.08325 10 7.08325C11.608 7.08325 12.9167 8.39159 12.9167 9.99992C12.9167 11.6083 11.608 12.9166 10 12.9166ZM10 7.91659C8.85129 7.91659 7.91671 8.85117 7.91671 9.99992C7.91671 11.1487 8.85129 12.0833 10 12.0833C11.1488 12.0833 12.0834 11.1487 12.0834 9.99992C12.0834 8.85117 11.1488 7.91659 10 7.91659Z" fill="white"/>
+            <path d="M13.125 7.5C13.4702 7.5 13.75 7.22018 13.75 6.875C13.75 6.52982 13.4702 6.25 13.125 6.25C12.7798 6.25 12.5 6.52982 12.5 6.875C12.5 7.22018 12.7798 7.5 13.125 7.5Z" fill="white"/>
+            <path d="M12.5 15.4166H7.50004C5.89212 15.4166 4.58337 14.1083 4.58337 12.4999V7.49992C4.58337 5.89159 5.89212 4.58325 7.50004 4.58325H12.5C14.108 4.58325 15.4167 5.89159 15.4167 7.49992V12.4999C15.4167 14.1083 14.108 15.4166 12.5 15.4166ZM7.50004 5.41659C6.35129 5.41659 5.41671 6.35117 5.41671 7.49992V12.4999C5.41671 13.6487 6.35129 14.5833 7.50004 14.5833H12.5C13.6488 14.5833 14.5834 13.6487 14.5834 12.4999V7.49992C14.5834 6.35117 13.6488 5.41659 12.5 5.41659H7.50004Z" fill="white"/>
+            <defs>
+              <radialGradient id="paint0_radial_53_850" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.07502 17.5146) scale(18.7079)">
+                <stop stop-color="#FFDD55"/>
+                <stop offset="0.328" stop-color="#FF543F"/>
+                <stop offset="0.348" stop-color="#FC5245"/>
+                <stop offset="0.504" stop-color="#E64771"/>
+                <stop offset="0.643" stop-color="#D53E91"/>
+                <stop offset="0.761" stop-color="#CC39A4"/>
+                <stop offset="0.841" stop-color="#C837AB"/>
+              </radialGradient>
+              <radialGradient id="paint1_radial_53_850" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.91085 2.30848) scale(12.4221 8.27683)">
+                <stop stop-color="#4168C9"/>
+                <stop offset="0.999" stop-color="#4168C9" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+          </svg>
+          <!---->
+
+      <footer class="footer py-3 px-2 mt-4 bg-dark text-light">
+        <div class="footer__hero d-flex justify-content-center">
+          <img src="./images/logo-transparent-bg-white.png" alt="ARA Beauty - a cosmetic brand.">
+        </div>
+        <div class="footer__categories">
+          <nav>
+            <ul class="nav justify-content-center pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Our policy<span class="footer__categories__border"></span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About us<span class="footer__categories__border"></span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Company<span class="footer__categories__border"></span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Newsletter</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__socials container my-2">
+          <div class="row h-auto">
+            <h5 class="col d-flex w-auto m-0 p-0 align-items-center">Socials</h5>
+            <div class="footer-socials-icons col-9 mb-0 d-flex align-items-center">
+              <!-- Twitter -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
+                <path d="M15.0012 1.42875C14.45 1.67292 13.8571 1.83583 13.2317 1.91292C13.8675 1.53542 14.3567 0.933333 14.5862 0.222083C13.9912 0.570833 13.3321 0.827083 12.6308 0.962083C12.0708 0.368333 11.2721 0 10.3871 0C8.68708 0 7.30917 1.36583 7.30917 3.05C7.30917 3.28833 7.33708 3.52042 7.38958 3.74583C4.83208 3.6175 2.56375 2.40167 1.04625 0.556667C0.779583 1.0075 0.629583 1.53542 0.629583 2.0925C0.629583 3.15125 1.17167 4.08333 1.99833 4.6325C1.49375 4.61708 1.01875 4.47667 0.602916 4.25167C0.602916 4.26083 0.602916 4.27458 0.602916 4.2875C0.602916 5.76708 1.66417 6.99917 3.07083 7.27958C2.81375 7.35 2.54208 7.38917 2.26208 7.38917C2.06333 7.38917 1.86958 7.36667 1.68208 7.33292C2.07375 8.54208 3.21 9.42583 4.55625 9.45208C3.50292 10.2687 2.17625 10.7579 0.73375 10.7579C0.484583 10.7579 0.240833 10.7437 0 10.7146C1.36292 11.5775 2.98125 12.0833 4.71833 12.0833C10.3787 12.0833 13.4754 7.435 13.4754 3.4025C13.4754 3.27042 13.4712 3.13875 13.465 3.00875C14.0692 2.58208 14.59 2.04375 15.0012 1.42875Z" fill="#03A9F4"/>
+              </svg>
+              <!---->
+              <!-- Facebook -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M17.5 15.4167C17.5 16.5675 16.5675 17.5 15.4167 17.5H4.58333C3.43292 17.5 2.5 16.5675 2.5 15.4167V4.58333C2.5 3.4325 3.43292 2.5 4.58333 2.5H15.4167C16.5675 2.5 17.5 3.4325 17.5 4.58333V15.4167Z" fill="#3F51B5"/>
+                <path d="M14.32 10.4167H12.9167V15.8334H10.8334V10.4167H9.58337V8.75008H10.8334V7.74591C10.8342 6.28425 11.4413 5.41675 13.1634 5.41675H14.5834V7.08341H13.6305C12.96 7.08341 12.9167 7.33341 12.9167 7.80133V8.75008H14.5834L14.32 10.4167Z" fill="white"/>
+              </svg>
+              <!---->
+              <!-- Instagram -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M14.1738 17.4958L5.84043 17.5038C4.0071 17.5054 2.50585 16.0071 2.50377 14.1738L2.49585 5.84043C2.49418 4.0071 3.99252 2.50585 5.82585 2.50377L14.1592 2.49585C15.9925 2.49418 17.4938 3.99252 17.4958 5.82585L17.5038 14.1592C17.5058 15.9929 16.0071 17.4942 14.1738 17.4958Z" fill="url(#paint0_radial_53_850)"/>
+                <path d="M14.1738 17.4958L5.84043 17.5038C4.0071 17.5054 2.50585 16.0071 2.50377 14.1738L2.49585 5.84043C2.49418 4.0071 3.99252 2.50585 5.82585 2.50377L14.1592 2.49585C15.9925 2.49418 17.4938 3.99252 17.4958 5.82585L17.5038 14.1592C17.5058 15.9929 16.0071 17.4942 14.1738 17.4958Z" fill="url(#paint1_radial_53_850)"/>
+                <path d="M10 12.9166C8.39212 12.9166 7.08337 11.6083 7.08337 9.99992C7.08337 8.39159 8.39212 7.08325 10 7.08325C11.608 7.08325 12.9167 8.39159 12.9167 9.99992C12.9167 11.6083 11.608 12.9166 10 12.9166ZM10 7.91659C8.85129 7.91659 7.91671 8.85117 7.91671 9.99992C7.91671 11.1487 8.85129 12.0833 10 12.0833C11.1488 12.0833 12.0834 11.1487 12.0834 9.99992C12.0834 8.85117 11.1488 7.91659 10 7.91659Z" fill="white"/>
+                <path d="M13.125 7.5C13.4702 7.5 13.75 7.22018 13.75 6.875C13.75 6.52982 13.4702 6.25 13.125 6.25C12.7798 6.25 12.5 6.52982 12.5 6.875C12.5 7.22018 12.7798 7.5 13.125 7.5Z" fill="white"/>
+                <path d="M12.5 15.4166H7.50004C5.89212 15.4166 4.58337 14.1083 4.58337 12.4999V7.49992C4.58337 5.89159 5.89212 4.58325 7.50004 4.58325H12.5C14.108 4.58325 15.4167 5.89159 15.4167 7.49992V12.4999C15.4167 14.1083 14.108 15.4166 12.5 15.4166ZM7.50004 5.41659C6.35129 5.41659 5.41671 6.35117 5.41671 7.49992V12.4999C5.41671 13.6487 6.35129 14.5833 7.50004 14.5833H12.5C13.6488 14.5833 14.5834 13.6487 14.5834 12.4999V7.49992C14.5834 6.35117 13.6488 5.41659 12.5 5.41659H7.50004Z" fill="white"/>
+                <defs>
+                  <radialGradient id="paint0_radial_53_850" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.07502 17.5146) scale(18.7079)">
+                    <stop stop-color="#FFDD55"/>
+                    <stop offset="0.328" stop-color="#FF543F"/>
+                    <stop offset="0.348" stop-color="#FC5245"/>
+                    <stop offset="0.504" stop-color="#E64771"/>
+                    <stop offset="0.643" stop-color="#D53E91"/>
+                    <stop offset="0.761" stop-color="#CC39A4"/>
+                    <stop offset="0.841" stop-color="#C837AB"/>
+                  </radialGradient>
+                  <radialGradient id="paint1_radial_53_850" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.91085 2.30848) scale(12.4221 8.27683)">
+                    <stop stop-color="#4168C9"/>
+                    <stop offset="0.999" stop-color="#4168C9" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <!---->
+            </div>
+        <div class="container">
+          <div class="py-5 text-center">
+              <h2>Checkout</h2>
+          </div>
+        </div>
+    </div>
+    <div class="footer__secured-payments container my-2">
+      <div class="row h-auto">
+        <h5 class="col d-flex w-auto m-0 p-0 align-items-center">Secured payments</h5>
+        <div class="footer__secured-payments__icons col-8 mb-0 d-flex align-items-center">
+          <!-- Apple pay -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
+            <g clip-path="url(#clip0_32_494)">
+              <path d="M5.13561 8.8957C4.80842 9.28203 4.28436 9.58672 3.75983 9.54297C3.69467 9.02109 3.95155 8.46562 4.25155 8.12344C4.57874 7.72656 5.15202 7.44297 5.61608 7.42188C5.67092 7.96562 5.45811 8.49883 5.13561 8.8957Z" fill="url(#paint0_linear_32_494)"/>
+              <path d="M5.59407 16.0156C5.21485 16.0156 4.95 15.9262 4.73719 15.8539C4.54688 15.7891 4.39594 15.7383 4.14891 15.7383C3.8911 15.7383 3.74204 15.7891 3.55313 15.8535C3.36047 15.9191 3.12141 16.0008 2.78625 16.0113C1.875 16.0113 1.29797 15.3078 0.988598 14.9297C0.252661 14.041 -0.505308 12.2297 0.428442 10.8895C0.890161 10.209 1.75829 9.76719 2.63766 9.76719C3.06563 9.76719 3.4336 9.89258 3.72938 9.99375C3.8536 10.0359 4.02329 10.0941 4.08282 10.0953C4.13766 10.0934 4.29891 10.0418 4.41704 10.0039C4.73204 9.90391 5.16329 9.76562 5.69532 9.76562C5.90391 9.76562 6.97829 9.80781 7.65657 10.6445C7.79579 10.8164 7.74985 11.0492 7.55157 11.1742C7.30125 11.3141 6.80719 11.6531 6.81329 12.2406C6.82079 13.0406 7.6336 13.318 7.66875 13.3297C7.89235 13.4031 8.01657 13.6074 7.95141 13.8004C7.94297 13.8246 7.7461 14.3973 7.29375 14.9473C6.89063 15.4398 6.41954 16.0156 5.59407 16.0156ZM4.14891 14.957C4.57922 14.957 4.86235 15.0531 5.09016 15.1301C5.26922 15.1906 5.39813 15.2344 5.59407 15.2344C5.9011 15.2344 6.15 14.9582 6.49454 14.5371C6.69282 14.2957 6.83297 14.0543 6.92297 13.8754C6.4936 13.6348 5.88422 13.1371 5.87579 12.248C5.86829 11.575 6.24704 11.107 6.59297 10.8207C6.2011 10.5563 5.75625 10.5469 5.69532 10.5469C5.33719 10.5469 5.02688 10.6461 4.7536 10.734C4.52344 10.8074 4.30594 10.8773 4.08329 10.8773C3.84329 10.8773 3.61547 10.7996 3.37407 10.7172C3.13172 10.6344 2.88094 10.5488 2.63766 10.5488C2.09907 10.5488 1.53797 10.8418 1.24172 11.2781C0.567192 12.2465 1.14 13.7371 1.76157 14.4879C2.07797 14.8742 2.41782 15.2305 2.76891 15.2305C2.92032 15.2254 3.03657 15.1859 3.19782 15.1309C3.42469 15.0535 3.70641 14.957 4.14891 14.957Z" fill="url(#paint1_linear_32_494)"/>
+              <path d="M12.6366 7.8125H8.90625V16.0156H10.3125V13.2812H12.5855C14.5364 13.2812 15.9375 12.1465 15.9375 10.5469C15.9375 8.94727 14.5622 7.8125 12.6366 7.8125ZM12.1875 12.1094H10.3125V8.98438H12.1875C13.5262 8.98438 14.3841 9.51055 14.3841 10.5469C14.3841 11.5832 13.5328 12.1094 12.1875 12.1094Z" fill="url(#paint2_linear_32_494)"/>
+              <path d="M19.1545 10.1562C17.5364 10.1562 16.3402 10.8996 16.2961 11.9219H17.6686C17.7816 11.4359 18.3422 11.1176 19.1105 11.1176C20.0419 11.1176 20.5688 11.4664 20.5688 12.1094L20.5692 12.5531L18.6638 12.6355C16.8952 12.7215 15.9375 13.3035 15.9375 14.3156C15.9375 15.3375 16.9261 16.0156 18.3427 16.0156C19.2994 16.0156 20.1877 15.6262 20.5898 15.009H20.6213L20.625 16.0156H22.0312V12.0289C22.0317 10.8898 20.8987 10.1562 19.1545 10.1562ZM20.5645 13.8145C20.5645 14.5531 19.7836 15.0793 18.7514 15.0793C17.9395 15.0793 17.4225 14.7656 17.4225 14.2852C17.4225 13.7895 17.9198 13.5012 18.8709 13.4555L20.5688 13.352L20.5645 13.8145Z" fill="url(#paint3_linear_32_494)"/>
+              <path d="M29.5312 10.1562L26.7469 16.1445C26.1141 17.5156 25.3875 17.9688 23.8406 17.9688C23.7656 17.9688 23.5828 17.9648 23.4375 17.957V17.0117C23.5312 17.0156 23.6344 17.0195 23.7047 17.0195C24.4031 17.0195 24.7969 16.793 25.0406 16.207L25.1859 15.8594L22.5 10.1562H24.1547L26.0156 14.6953L27.9188 10.1562H29.5312Z" fill="url(#paint4_linear_32_494)"/>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_32_494" x1="4.68749" y1="7.42188" x2="4.68749" y2="15.9277" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1A6DFF"/>
+                <stop offset="1" stop-color="#C822FF"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_32_494" x1="3.98157" y1="7.55195" x2="3.98157" y2="15.9184" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1A6DFF"/>
+                <stop offset="1" stop-color="#C822FF"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_32_494" x1="12.4219" y1="7.8125" x2="12.4219" y2="16.0156" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6DC7FF"/>
+                <stop offset="1" stop-color="#E6ABFF"/>
+              </linearGradient>
+              <linearGradient id="paint3_linear_32_494" x1="18.9844" y1="10.1562" x2="18.9844" y2="16.0156" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6DC7FF"/>
+                <stop offset="1" stop-color="#E6ABFF"/>
+              </linearGradient>
+              <linearGradient id="paint4_linear_32_494" x1="26.0156" y1="10.1562" x2="26.0156" y2="17.9688" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6DC7FF"/>
+                <stop offset="1" stop-color="#E6ABFF"/>
+              </linearGradient>
+              <clipPath id="clip0_32_494">
+                <rect width="30" height="25" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <!---->
+          <!-- Visa -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
+            <path d="M28.125 18.2292C28.125 19.3797 27.0056 20.3125 25.625 20.3125H4.375C2.99437 20.3125 1.875 19.3797 1.875 18.2292V6.77083C1.875 5.62031 2.99437 4.6875 4.375 4.6875H25.625C27.0056 4.6875 28.125 5.62031 28.125 6.77083V18.2292Z" fill="#1565C0"/>
+            <path d="M9.49123 9.89578L7.84999 13.975C7.84999 13.975 7.43311 12.2494 7.39186 12.0328C6.45748 10.2562 5.07874 10.3552 5.07874 10.3552L6.70373 15.625V15.6239H8.67936L11.4112 9.89578H9.49123ZM11.0556 15.625H12.85L13.935 9.89578H12.1181L11.0556 15.625ZM23.755 9.89578H21.8669L18.9231 15.625H20.7056L21.0731 14.8067H23.3206L23.5119 15.625H25.145L23.755 9.89578ZM21.5706 13.7125L22.5475 11.5473L23.0587 13.7125H21.5706ZM16.4806 11.5656C16.4806 11.25 16.7919 11.0151 17.6844 11.0151C18.2644 11.0151 18.9287 11.3661 18.9287 11.3661L19.22 10.1635C19.22 10.1635 18.3712 9.89526 17.5381 9.89526C15.6512 9.89526 14.6781 10.6473 14.6781 11.5994C14.6781 13.3213 17.165 13.0854 17.165 13.9697C17.165 14.1213 17.0206 14.4718 15.985 14.4718C14.9462 14.4718 14.2606 14.1546 14.2606 14.1546L13.9512 15.3088C13.9512 15.3088 14.6156 15.6244 15.8994 15.6244C17.1862 15.6244 18.9712 14.8223 18.9712 13.6703C18.9712 12.2843 16.4806 12.1843 16.4806 11.5656Z" fill="white"/>
+            <path d="M7.6325 12.9923L7.02876 10.5193C7.02876 10.5193 6.75563 9.9834 6.04563 9.9834C5.33563 9.9834 3.27063 9.9834 3.27063 9.9834C3.27063 9.9834 6.80875 10.8542 7.6325 12.9923Z" fill="#FFC107"/>
+          </svg>
+          <!---->
+          <!-- Mastercard -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
+            <path d="M28.125 18.2292C28.125 19.3797 27.0056 20.3125 25.625 20.3125H4.375C2.99437 20.3125 1.875 19.3797 1.875 18.2292V6.77083C1.875 5.62031 2.99437 4.6875 4.375 4.6875H25.625C27.0056 4.6875 28.125 5.62031 28.125 6.77083V18.2292Z" fill="#3F51B5"/>
+            <path d="M18.75 7.29175C17.0924 7.29175 15.5027 7.84048 14.3306 8.81723C13.1585 9.79399 12.5 11.1187 12.5 12.5001C12.5 13.8814 13.1585 15.2062 14.3306 16.1829C15.5027 17.1597 17.0924 17.7084 18.75 17.7084C20.4076 17.7084 21.9973 17.1597 23.1694 16.1829C24.3415 15.2062 25 13.8814 25 12.5001C25 11.1187 24.3415 9.79399 23.1694 8.81723C21.9973 7.84048 20.4076 7.29175 18.75 7.29175Z" fill="#FFC107"/>
+            <path d="M13.7587 15.6251C13.4688 15.3037 13.2194 14.9563 13.0237 14.5834H16.3519C16.5256 14.2522 16.6619 13.9042 16.75 13.5417H12.6262C12.5437 13.2053 12.5 12.8574 12.5 12.5001H16.875C16.875 12.1428 16.8313 11.7949 16.7494 11.4584H12.6256C12.7144 11.0959 12.85 10.748 13.0237 10.4167H16.3519C16.1562 10.0438 15.9075 9.69644 15.6169 9.37508H13.7587C14.0319 9.073 14.34 8.79071 14.6844 8.54435C13.5919 7.76519 12.1756 7.29175 10.625 7.29175C7.17313 7.29175 4.375 9.62352 4.375 12.5001C4.375 15.3766 7.17313 17.7084 10.625 17.7084C12.6681 17.7084 14.4762 16.8881 15.6163 15.6251H13.7587Z" fill="#FF3D00"/>
+          </svg>
+          <!---->
+          <!-- AM EX -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
+            <path d="M28.125 18.2292C28.125 19.3797 27.0056 20.3125 25.625 20.3125H4.375C2.99437 20.3125 1.875 19.3797 1.875 18.2292V6.77083C1.875 5.62031 2.99437 4.6875 4.375 4.6875H25.625C27.0056 4.6875 28.125 5.62031 28.125 6.77083V18.2292Z" fill="#1976D2"/>
+            <path d="M13.9094 10.4167L12.5887 12.8558L11.2744 10.4167H9.59V13.9199L7.71312 10.4167H6.29188L4.375 14.0527H5.50937L5.92875 13.2412H8.07375L8.5 14.0527H10.6656V11.3522L12.1025 14.0527H13.0794L14.5487 11.399V14.0527H15.625V10.4167H13.9094ZM6.33437 12.4558L6.97562 11.185L7.64187 12.4558H6.33437ZM23.6769 12.1944L25.625 10.4261H24.2394L22.9931 11.5532L21.7875 10.4167H17.5V14.0532H21.6469L22.9544 12.8496L24.2294 14.0626H25.6106L23.6769 12.1944ZM21.08 13.2897H18.5731V12.5704H20.9719V11.8813H18.5731V11.2001L21.2194 11.2063L22.2775 12.1944L21.08 13.2897Z" fill="white"/>
+          </svg>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </footer>
