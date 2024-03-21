@@ -217,10 +217,24 @@ export const filterProductBySearch = (searchInput ,productsArray,containerElemen
 // FUNCTIONS FOR MANAGE CART 
 
 // Add an item in cart on click on "+" element of the card
-const addItemsInCart = (btns, modalCart) =>{
+const addItemsInCart = (btns, modalCart, modale=false) =>{
     btns.forEach((btn)=>{
         let addItem = btn.addEventListener('click', ()=>{
+
+            for (const [key, value] of Object.entries(modalCart)) {
+                if(modalCart[key].quantity === 0){
+                    delete modalCart[key];
+                }
+            }
+
+            console.log(modalCart)
+
             let product = btn.parentElement.parentElement.parentElement.parentElement.parentElement; 
+
+            // redifine product if click on modal + btn
+            if(modale){
+                product = btn.parentElement.parentElement.parentElement;
+            }
             let productId= product.dataset.id;
             let productPrice=  parseInt(product.dataset.price);
             let numberCartItemEl = document.getElementById('numCartItems');
@@ -229,7 +243,8 @@ const addItemsInCart = (btns, modalCart) =>{
             let numberCartItem = 0;
             if(numberCartItemContent !== ''){
                 numberCartItem = parseInt(numberCartItemContent);
-            }
+            }          
+
             numberCartItem += 1
             totalItems += 1;            
             numberCartItemEl.dataset.totalitems = totalItems;
@@ -247,7 +262,6 @@ const addItemsInCart = (btns, modalCart) =>{
             else{
                 for (const [key, value] of Object.entries(modalCart)) {
                     if(key == productId){ 
-                        console.log('50')   
                         modalCart[productId].quantity = value.quantity + 1  ;
                     }else{
                         let arrayOfKey = []; 
@@ -255,6 +269,7 @@ const addItemsInCart = (btns, modalCart) =>{
                             arrayOfKey.push(key.toString())
                         }
                         console.log(arrayOfKey)
+                        console.log(modalCart)
                         if(!arrayOfKey.includes(productId)){
                             let productObject = {
                                 id: productId,
@@ -266,10 +281,11 @@ const addItemsInCart = (btns, modalCart) =>{
                     }
                 }
             }
-            // console.log('test');
+            console.log('test');
             renderCartItemsInNav(numberCartItem)
             addAlertMessage("add-product")
             renderCartModal(modalCart);
+            console.log(modalCart)
             return modalCart
         })
         btn.removeEventListener('click', addItem)
@@ -278,10 +294,17 @@ const addItemsInCart = (btns, modalCart) =>{
 }
 
 // Remove an item in cart on click on "+" element of the card
-const removeItemsInCart = (btns, modalCart) => {
+const removeItemsInCart = (btns, modalCart, modale=false) => {
     btns.forEach((btn)=>{
         let removeItem=  btn.addEventListener('click', ()=>{
+            console.log(modalCart)
+            // return;
             let product = btn.parentElement.parentElement.parentElement.parentElement.parentElement; 
+
+            // redifine product if click on modal + btn
+            if(modale){
+                product = btn.parentElement.parentElement.parentElement;
+            }
             let productId= product.dataset.id;
             let numberCartItemEl = document.getElementById('numCartItems');
             let totalItems = parseInt(numberCartItemEl.dataset.totalitems);
@@ -304,7 +327,6 @@ const removeItemsInCart = (btns, modalCart) => {
 
                 for (const [key, value] of Object.entries(modalCart)) {
                     if(key === productId){
-                        
                         modalCart[productId].quantity = value.quantity - 1  ;
                     }
                 }
@@ -324,22 +346,24 @@ const removeItemsInCart = (btns, modalCart) => {
 const manageCartItemCatalogue = (modalCart) =>{
     let addItemToCartBtns = document.querySelectorAll('#articles-container .add-product-to-cart')
     let removeItemToCartBtns = document.querySelectorAll(' #articles-container .remove-product-to-cart')
-    addItemsInCart(addItemToCartBtns, modalCart)
-    removeItemsInCart(removeItemToCartBtns, modalCart)
+    addItemsInCart(addItemToCartBtns, modalCart, false)
+    removeItemsInCart(removeItemToCartBtns, modalCart, false)
 }
 
 const manageCartItemBestSeller = (modalCart) =>{
     let addItemToCartBtns = document.querySelectorAll('#bestseller-container .add-product-to-cart')
     let removeItemToCartBtns = document.querySelectorAll(' #bestseller-container .remove-product-to-cart')
-    addItemsInCart(addItemToCartBtns, modalCart)
-    removeItemsInCart(removeItemToCartBtns, modalCart)
+    addItemsInCart(addItemToCartBtns, modalCart, false)
+    removeItemsInCart(removeItemToCartBtns, modalCart,false)
 }
 
 // GESTION DU CART
 export const renderCartModal = (modalCart) =>{
     let cartContainer = document.getElementById('cart-content');
     if(Object.keys(modalCart).length > 0   ){
+        console.log(modalCart)
         renderCartHTMLContent(cartContainer, modalCart);
+        manageCartItemModale(modalCart)
     }else{
         cartContainer.innerHTML = `
         <div class="container order-details text-center">
@@ -358,8 +382,41 @@ const filterCartObject = (object) =>{
 }
 
 const manageCartItemModale = (modalCart) =>{
-    let addCartsItem = document.querySelectorAll('#articles-container .add-quantity')
-    let removeCartsItem = document.querySelectorAll(' #articles-container .remove-quantity')
-    addItemsInCart(addCartsItem, modalCart)
-    removeItemsInCart(removeCartsItem, modalCart)
+    console.log('manage cart modale')
+    let addCartsItem = document.querySelectorAll('#offproductorder .add-quantity');
+    let removeCartsItem = document.querySelectorAll(' #offproductorder .remove-quantity');
+    let deletebtns = document.querySelectorAll('#offproductorder .bi-trash');
+    addItemsInCart(addCartsItem, modalCart, true);
+    removeItemsInCart(removeCartsItem, modalCart, true);
+    deleteItemInCartModale(deletebtns, modalCart);
+}
+
+const deleteItemInCartModale = (btns, modalCart) =>{
+    btns.forEach(btn =>{
+        const deleteItem = btn.addEventListener('click', ()=>{
+            console.log('click')
+            let product = btn.parentElement.parentElement.parentElement.parentElement;
+            console.log(product)
+            let productId= product.dataset.id;
+            let numberCartItemEl = document.getElementById('numCartItems');
+            let totalItems = parseInt(numberCartItemEl.dataset.totalitems);
+            let numberCartItem = totalItems;
+            let qty = null
+            for (const [key, value] of Object.entries(modalCart)) {
+                if(key === productId){
+                    console.log('tot')
+                    qty = modalCart[productId].quantity
+                    delete modalCart[productId];
+                }
+            }
+            numberCartItem -=qty;
+            if(numberCartItem < 0){
+                console.log('line 404')
+                numberCartItem = 0
+            }
+            renderCartModal(modalCart);
+            renderCartItemsInNav(numberCartItem)
+        })
+        btn.removeEventListener('click', deleteItem)
+    })
 }

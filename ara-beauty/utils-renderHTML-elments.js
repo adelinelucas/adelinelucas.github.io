@@ -86,7 +86,7 @@ export const renderFilterMessage = (containerEl) =>{
 
 export const renderCartProduct = (product, quantity) =>{
     let productTotal = product.price * quantity;
-    return `<div class="row mb-2 row-cols-1 row-underline product-details" data=id=${product.id} >
+    return `<div class="row mb-2 row-cols-1 row-underline product-details" data-id=${product.id} date-price=${product.price}>
         <div class="col-3 px-0">
             <div class="row row-cols-1">
                 <div class="pe-0">
@@ -104,7 +104,7 @@ export const renderCartProduct = (product, quantity) =>{
         <div class="col-2 d-flex justify-content-center py-1 ps-1 pe-2 update-quantity-el">
             <div class="d-flex align-items-start">
                 <div class="add-quantity">+</div>
-                <input type="text" name="update-quantity" id="cart-product-quantity" min="1" value="${quantity}"/>
+                <input type="text" name="update-quantity" id="cart-product-quantity" min="1" value="${quantity}" disabled/>
                 <div class="remove-quantity">-</div>
             </div> 
         </div>
