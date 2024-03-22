@@ -18,6 +18,9 @@ module.exports = {
       animation: {
         'boxContainerAnimation': 'all ease-in-out 5s',
       },
+      boxShadow: {
+        '3xl': '2px 5px 15px 0px rgb(31 0 55)',
+      }
     },
   },
   plugins: [],
