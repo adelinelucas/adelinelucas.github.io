@@ -5,6 +5,7 @@
 */
 
 // IMPORTS
+import { productsData } from './productsData.js';
 import {sanitizedProductsList} from './utils-sanitizeProducts.js';
 import {fetchProductsData,loaderEl, remove_loaderEl, displayBestSellerTitle, displayFilters,filterByPrice,displayBestSellerInDOM, displayProductsInDOM,displayFilteredProductsInDOM,displayFilterByPriceBtns,filterProductBySearch, filterProductBySearchButton} from './utils-functions.js'
 import {addAlertMessage, generateCatalogueArticleHTMLEl,renderCartItemsInNav} from './utils-renderHTML-elments.js';
@@ -17,8 +18,11 @@ document.addEventListener('DOMContentLoaded', async()=>{
     let numberFavouriteItem  = 0
     let numberCartItemEl = document.getElementById('numCartItems')
     let modalCart = {};
-    const url = 'http://localhost:3000/products';
-    let productsList = await fetchProductsData(url)
+    // get data from json 
+    // const url = 'http://localhost:3000/products';
+    // let productsList = await fetchProductsData(url)
+    let productsList = productsData;
+
     loaderEl();
     let loadingProducts = setTimeout(()=>{
         remove_loaderEl() 
