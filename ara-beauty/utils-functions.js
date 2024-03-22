@@ -227,8 +227,6 @@ const addItemsInCart = (btns, modalCart, modale=false) =>{
                 }
             }
 
-            console.log(modalCart)
-
             let product = btn.parentElement.parentElement.parentElement.parentElement.parentElement; 
 
             // redifine product if click on modal + btn
@@ -248,8 +246,6 @@ const addItemsInCart = (btns, modalCart, modale=false) =>{
             numberCartItem += 1
             totalItems += 1;            
             numberCartItemEl.dataset.totalitems = totalItems;
-            console.log(modalCart)
-
 
             if(Object.keys(modalCart).length === 0) {
                  let productObject = {
@@ -268,8 +264,6 @@ const addItemsInCart = (btns, modalCart, modale=false) =>{
                         for (const [key, value] of Object.entries(modalCart)){
                             arrayOfKey.push(key.toString())
                         }
-                        console.log(arrayOfKey)
-                        console.log(modalCart)
                         if(!arrayOfKey.includes(productId)){
                             let productObject = {
                                 id: productId,
@@ -281,11 +275,9 @@ const addItemsInCart = (btns, modalCart, modale=false) =>{
                     }
                 }
             }
-            console.log('test');
             renderCartItemsInNav(numberCartItem)
             addAlertMessage("add-product")
             renderCartModal(modalCart);
-            console.log(modalCart)
             return modalCart
         })
         btn.removeEventListener('click', addItem)
@@ -297,8 +289,6 @@ const addItemsInCart = (btns, modalCart, modale=false) =>{
 const removeItemsInCart = (btns, modalCart, modale=false) => {
     btns.forEach((btn)=>{
         let removeItem=  btn.addEventListener('click', ()=>{
-            console.log(modalCart)
-            // return;
             let product = btn.parentElement.parentElement.parentElement.parentElement.parentElement; 
 
             // redifine product if click on modal + btn
@@ -310,10 +300,12 @@ const removeItemsInCart = (btns, modalCart, modale=false) => {
             let totalItems = parseInt(numberCartItemEl.dataset.totalitems);
             let numberCartItemContent = numberCartItemEl.innerHTML;
             let numberCartItem = totalItems;
+            let isItemsInCart = manageRemoveProductCataloguePage(productId, modalCart);
 
-            console.log(modalCart)
+            // no action if items is non in cart
+            if(! isItemsInCart) return; 
+
             if(totalItems <= 1) {
-                console.log('in total item < 1 ')
                 numberCartItemContent = 0
                 numberCartItemEl.dataset.totalitems = 0;
                 modalCart = {}
@@ -333,7 +325,6 @@ const removeItemsInCart = (btns, modalCart, modale=false) => {
             }
             
             modalCart = filterCartObject(modalCart);
-            console.log(modalCart)
             renderCartModal(modalCart);
             renderCartItemsInNav(numberCartItem)
             renderCartModal(modalCart);
@@ -361,7 +352,6 @@ const manageCartItemBestSeller = (modalCart) =>{
 export const renderCartModal = (modalCart) =>{
     let cartContainer = document.getElementById('cart-content');
     if(Object.keys(modalCart).length > 0   ){
-        console.log(modalCart)
         renderCartHTMLContent(cartContainer, modalCart);
         manageCartItemModale(modalCart)
     }else{
@@ -382,7 +372,6 @@ const filterCartObject = (object) =>{
 }
 
 const manageCartItemModale = (modalCart) =>{
-    console.log('manage cart modale')
     let addCartsItem = document.querySelectorAll('#offproductorder .add-quantity');
     let removeCartsItem = document.querySelectorAll(' #offproductorder .remove-quantity');
     let deletebtns = document.querySelectorAll('#offproductorder .bi-trash');
@@ -394,9 +383,7 @@ const manageCartItemModale = (modalCart) =>{
 const deleteItemInCartModale = (btns, modalCart) =>{
     btns.forEach(btn =>{
         const deleteItem = btn.addEventListener('click', ()=>{
-            console.log('click')
             let product = btn.parentElement.parentElement.parentElement.parentElement;
-            console.log(product)
             let productId= product.dataset.id;
             let numberCartItemEl = document.getElementById('numCartItems');
             let totalItems = parseInt(numberCartItemEl.dataset.totalitems);
@@ -404,14 +391,12 @@ const deleteItemInCartModale = (btns, modalCart) =>{
             let qty = null
             for (const [key, value] of Object.entries(modalCart)) {
                 if(key === productId){
-                    console.log('tot')
                     qty = modalCart[productId].quantity
                     delete modalCart[productId];
                 }
             }
             numberCartItem -=qty;
             if(numberCartItem < 0){
-                console.log('line 404')
                 numberCartItem = 0
             }
             renderCartModal(modalCart);
@@ -419,4 +404,18 @@ const deleteItemInCartModale = (btns, modalCart) =>{
         })
         btn.removeEventListener('click', deleteItem)
     })
+}
+
+const manageRemoveProductCataloguePage = (productId, modalCart) =>{
+    let activateBtn = false;
+
+    for (const [key, value] of Object.entries(modalCart)) {
+        if(key === productId){
+            activateBtn = true;
+        }else{
+            activateBtn = false;
+        }
+    }
+
+    return activateBtn;
 }
